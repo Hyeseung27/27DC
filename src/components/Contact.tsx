@@ -433,8 +433,9 @@ const Contact: React.FC = () => {
             <a
               key={platform.id}
               href={platform.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={platform.href !== '#' ? '_blank' : undefined}
+              rel={platform.href !== '#' ? 'noopener noreferrer' : undefined}
+              onClick={platform.href === '#' ? (e: React.MouseEvent) => e.preventDefault() : undefined}
               style={{
                 width: '50px',
                 height: '50px',
