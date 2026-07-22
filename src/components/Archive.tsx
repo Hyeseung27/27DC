@@ -149,9 +149,7 @@ const Archive: React.FC = () => {
             e.currentTarget.style.color = '#fff';
           }}
           onClick={() => {
-            // 27웹사이트3이 로컬에서 보통 5174 포트로 열린다고 가정합니다.
-            // 실제 배포된 주소가 있다면 이 부분을 배포 주소로 변경하면 됩니다.
-            window.open('http://localhost:5173/', '_blank');
+            window.open('https://27dc-exhibition.vercel.app/', '_blank');
           }}
           >
             Go to Exhibition
